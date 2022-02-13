@@ -1,20 +1,17 @@
-import React, { useEffect } from "react";
-import { useAppSelector, useAppDispatch } from "./app/hooks";
-import { fetchAllPosts, selectAllPosts } from "./features/posts/postsSlice";
+import React from "react";
+import AddPost from "./components/AddPost";
+import PostsList from "./features/posts/PostsList";
+import Header from "./components/Header";
+import { Outlet, Link } from "react-router-dom";
+import SimpleBottomNavigation from "./components/BottomNavigation";
 import "./App.css";
 
 function App() {
-  // const posts = useAppSelector(selectAllPosts);
-  // const dispatch = useAppDispatch();
-  // useEffect(() => {
-  //   dispatch(fetchAllPosts());
-  // }, []);
+  // all components between div tags below will persist across all pages
   return (
     <div>
-      It's working
-      {/* {posts.map((post) => (
-        <h2>{post.id}</h2>
-      ))} */}
+      <Header />
+      <Outlet />
     </div>
   );
 }

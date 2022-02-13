@@ -1,0 +1,9 @@
+.edit-item {
+  display: flex;
+  align-items: center;
+  color: rgb(6, 6, 194);
+  cursor: pointer;
+}
+.MuiSvgIcon-root {
+  padding-right: 8px;
+}

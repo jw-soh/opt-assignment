@@ -5,10 +5,17 @@ export type Post = {
   body: string;
 };
 
+type Status = "idle" | "loading" | "succeeded" | "failed";
+
+type createState = {
+  status: Status;
+}
+
 export type PostsState = {
+  create: createState;
   items: Post[];
   // Multiple possible status values
-  status: "idle" | "loading" | "succeeded" | "failed";
+  status: Status;
   error: string | undefined;
 };
 

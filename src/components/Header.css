@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+}
+.MuiTypography-root {
+  color: white;
+}
+.MuiMenuItem-root > p {
+  color: #000;
+}
